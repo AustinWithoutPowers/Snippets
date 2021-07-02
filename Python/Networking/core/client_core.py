@@ -20,4 +20,4 @@ def client(server_addr):
     
   client_socket.close()
 
-client(('localhost', 8081))
+client(('www.google.com', 443))
