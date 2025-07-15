@@ -1,4 +1,4 @@
-from ..SocketWithoutPowers import ServerSocket 
+import core.socket_without_powers as swp
 
 SHUTDOWN_PHRASE = 'asdf'
 PASSWORD = 'password1'
@@ -10,7 +10,7 @@ class SocketResponse:
     DECLINED = 'Declined'
 
 def main():
-    server_socket = ServerSocket(debug=DEBUGGING)
+    server_socket = swp.ServerSocket(debug=DEBUGGING)
     server_socket.bind_and_listen()
 
     authenticated = False

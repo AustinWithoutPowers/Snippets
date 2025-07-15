@@ -1,4 +1,4 @@
-import python.SocketWithoutPowers as SWP
+import core.socket_without_powers as SWP
 
 DEBUGGING = False
 
